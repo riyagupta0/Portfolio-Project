@@ -1,6 +1,6 @@
 "use client"
-import React, {useTransition, useState } from 'react'
-import Image from 'next/image'
+import React, {useTransition, useState } from "react"
+import Image from "next/image"
 import TabButton from "./TabButton"
 
 const TAB_DATA = [
@@ -8,7 +8,7 @@ const TAB_DATA = [
         title: "Skills",
         id:"skills",
         content: (
-            <ul className='list-disc pl-2'>
+            <ul className="list-disc pl-2">
                 <li>C++, Python</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -35,7 +35,7 @@ const TAB_DATA = [
         title: "education",
         id:"education",
         content: (
-            <ul className='list-disc pl-2'>
+            <ul className="list-disc pl-2">
                 <li>Master of Computer Application , Chandigarh University</li>
                 <li>
                     Bachelor of Science, Maharaj Singh College, Saharanpur
@@ -50,7 +50,7 @@ const TAB_DATA = [
         title: "Certification",
         id:"certification",
         content: (
-            <ul className='list-disc pl-2'>
+            <ul className="list-disc pl-2">
                 <li >Basics of C++ (Coding Ninjas)</li>
                 <li>DSA in C++(Coding Ninjas)</li>
                 <li>Web Development (Apna College)</li>
@@ -71,15 +71,15 @@ const AboutSection = ()  => {
         });
     }
   return (
-    <section id='about' className='text-white'>
-        <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+    <section id="about" className="text-white">
+        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
             <Image src="/images/about-image.png" alt="about" width={500} height={500} />
-            <div className='mt-4 md:mt-0 text-left flex flex-col h-full' >
-                <h2 className='text-4xl font-bold text-white mb-4 '>About Me</h2>
-                <p className='text-base lg:text-lg'>I&apos;m an MCA student with a strong grasp of programming languages and data structures. Passionate about problem-solving and technology, I'm eager to expand my skills in software development. With proficiency in HTML,CSS, Javascript, React.js , Node.js and C++ for DSA , I&apos;m driven to innovate and make a meaningful impact in the tech industry.
+            <div className="mt-4 md:mt-0 text-left flex flex-col h-full" >
+                <h2 className="text-4xl font-bold text-white mb-4 ">About Me</h2>
+                <p className="text-base lg:text-lg">I&apos;m an MCA student with a strong grasp of programming languages and data structures. Passionate about problem-solving and technology, I'm eager to expand my skills in software development. With proficiency in HTML,CSS, Javascript, React.js , Node.js and C++ for DSA , I&apos;m driven to innovate and make a meaningful impact in the tech industry.
 
-                I love coding :)</p>
-                <div className='flex flex-row mt-8'>
+                I love coding.</p>
+                <div className="flex flex-row mt-8">
 
                     <TabButton selectTab={() => handleTabChange("skills")} active ={tab === "skills"}>{" "} Skills {" "} </TabButton>
 
