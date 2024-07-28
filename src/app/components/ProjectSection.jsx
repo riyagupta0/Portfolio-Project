@@ -12,7 +12,7 @@ const Project_data = [
         image: "/images/Projects/Portfolio-image.png",
         tag:[ "All" , "Web", "Mobile"],
         gitUrl : "https://github.com/riyagupta0/Portfolio-Project",
-        previewUrl: "/"
+        previewUrl: "https://portfolio-project-five-ivory.vercel.app/"
     },
     {
         id: 2,
