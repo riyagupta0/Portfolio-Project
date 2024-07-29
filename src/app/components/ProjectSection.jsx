@@ -72,7 +72,7 @@ function ProjectSection() {
         {filterdProjects.map((project, index) => 
             <motion.li key={index} variants={cardVariants} initial="initial" animate={isInView ? "animate" : "initial"} transition={{duration:0.3 , delay:index * 0.4}} >
            
-            <ProjectsCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} tags={project.tag} gitUrl= {project.gitUrl} previewUrl={project.gitUrl}/>
+            <ProjectsCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} tags={project.tag} gitUrl= {project.gitUrl} previewUrl={project.previewUrl}/>
             </motion.li>
         )} 
     </div>
