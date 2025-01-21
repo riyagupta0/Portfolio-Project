@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script"; // Import Script component for analytics
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics gtag.js script */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-8GQXVRVYQS`}
+          strategy="afterInteractive" // Ensures it loads after the page is interactive
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8GQXVRVYQS'); // Replace with your Google Analytics Measurement ID
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
