@@ -31,6 +31,7 @@ export default function RootLayout({
             gtag('config', 'G-8GQXVRVYQS'); // Replace with your Google Analytics Measurement ID
           `}
         </Script>
+        <meta name="google-site-verification" content="pbt3EKJ3oSd7AsG6rT_bfoQ40MPcCmTNtNrcYZrQ0ZQ" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
